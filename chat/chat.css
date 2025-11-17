@@ -89,15 +89,15 @@ html, body{
 /* onde vai ficas as fotos dos icones e chat */
 .icones{
     background-color: white;
-    width: 5vh;
-    height: 50%;
+    width: 30px;
+    height: 30px;
     margin-left: 2%;
     margin: 3%;
     position:static;
     border-radius: 50%;
 }
 
-/* aba do feed */
+/* aba da conversa */
 .feed{
     height: 90%;
     width: 68%;
@@ -105,4 +105,12 @@ html, body{
     margin-right: 2%;
     margin-top: 2%;
     color: var(--recado);
+}
+
+/* input das mensagens */
+.escrever{
+    height: 5%;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 46%; 
 }
