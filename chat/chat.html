@@ -5,48 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./chat.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Guja chat :D</title>
 </head>
 
 <body>
-    <div class="container_alto">
-        <div class="molde">
-            <button class="publicação"> Publicacar</button>
-            <input type="text" class="pesquisa" placeholder="aqui vão ser feitras pesquisar por perfis e usuarios">
-            <div class="perfil"></div>
+   
+    <div class="container-fluid">
+         <!-- TODA PARTE DE CIMA (USEI BOOTSTRAP)-->
+        <div class="mb-3 w-100 h-100">
+            <!-- input de pesquisar -->
+            <input type="text" class="form-control" id="ipt_pesquisa" placeholder="pesquisar">
+            <!-- botão de puiblicação -->
+            <button type="button" class="btn btn-primary" id="bt_publicação">publicação</button>
+            <!-- botão do perfil -->
+            <button type="button" class="btn btn-primary" id="bt_perfil">
+                <i class="bi bi-person"></i>
+            </button>
         </div>
+
+        <!-- TODA DIV DA LISTA DE CONTATOS -->
+        <div class="cnt_conversas">
+            <!-- titulo com nome guja chat em azul -->
+            <div class="logo">
+                <h1>Guja chat</h1>
+            </div>
+
+            <!-- lista de contatos -->
+            <div class="lista">
+                <div class="item">Conversa 1</div>
+                <div class="item">Conversa 2</div>
+                <div class="item">Conversa 3</div>
+        
+            </div>
+        </div>
+
+        <!-- TODA DIV DO FEED -->
+        <div class="chat">
+            <div class="logo2">
+                <button type="button" class="btn btn-primary" id="bt_perfil_chat">
+                <i class="bi bi-person"></i> </button>
+                <div>nome do contato</div>
+            </div>
+            <!-- input de mensagem -->
+            <input type="text" class="form-control" id="ipt_mensagem" placeholder="pesquisar">
+
+        </div>
+
+        
     </div>
-
-    <div class="container">
-        <div class="aba_opcoes">
-            <div class="partiçoes">
-                <div class="icones"></div> conversa1
-            </div>
-            <div class="partiçoes">
-                <div class="icones"></div> conversa2
-            </div>
-            <div class="partiçoes">
-                <div class="icones"></div> conversa3
-            </div>
-            <div class="partiçoes">
-                <div class="icones"></div> conversa4
-            </div>
-            <div class="partiçoes">
-                <div class="icones"></div> conversa5
-            </div>
-            <div class="partiçoes">
-                <div class="icones"></div> conversa6
-            </div>
-
-        </div>
-        <div class="feed">
-            <div>aqui vai ficar o feed, onde vai passar a conversa</div>
-            <input type="text" class="escrever" placeholder=" a pessoa vai digitar aqui">
-            <div class="icones"></div>
-
-        </div>
-    </div>
-
 </body>
 
 </html>
